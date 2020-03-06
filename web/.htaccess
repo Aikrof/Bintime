@@ -6,7 +6,3 @@ RewriteRule . index.php [L]
 RewriteCond %{REQUEST_URI} !^/$
 RewriteCond %{REQUEST_URI} (.*)/$
 RewriteRule . %1.php [R=301,L,E=NS:1,QSA]
-
-RewriteCond %{REQUEST_URI} !^(.+)\.(php)$
-RewriteRule . %{REQUEST_URI}.php [L]
-
